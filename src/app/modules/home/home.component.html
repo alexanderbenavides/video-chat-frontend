@@ -1,0 +1,11 @@
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Nombre</mat-label>
+    <input matInput placeholder="Juan" name="name" [(ngModel)]="inputValue" autocomplete="off">
+  </mat-form-field>
+  <section>
+    <div class="example-button-row">
+      <button mat-raised-button color="primary" [disabled]="!inputValue" (click)="goToMeeting()">Login</button>
+    </div>
+  </section>
+</form>

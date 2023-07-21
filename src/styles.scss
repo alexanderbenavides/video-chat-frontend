@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(https://media.istockphoto.com/id/1328689113/it/foto/cielo-blu-estivo-e-sfondo-bianco-nuvola-bianca-bella-nuvolosit%C3%A0-limpida-alla-luce-del-sole.jpg?b=1&s=170667a&w=0&k=20&c=2573qcj8yh9Vvc3Qzch_NfyIbPw1YVV5lVHQWnyROlU=);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}

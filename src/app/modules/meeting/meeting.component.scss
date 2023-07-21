@@ -1,0 +1,19 @@
+.title-container {
+  color: #fff;
+  text-align: center;
+  h1 {
+    font-size: 4rem;
+    margin-top: 3rem;
+  }
+}
+
+
+.container-videos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  video {
+    width: 100%;
+  }
+}

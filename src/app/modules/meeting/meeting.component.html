@@ -1,0 +1,30 @@
+<section>
+  <article class="title-container">
+    <h1>Video chat app</h1>
+  </article>
+  <article class="video-player">
+    <div class="container-videos">
+      <mat-card>
+        <mat-card-content>
+          {{storageInfo.name}}
+          <video playsInline #miVideo autoPlay></video>
+        </mat-card-content>
+      </mat-card>
+      <mat-card>
+        <mat-card-content>
+          {{otherUser.name}}
+          <video playsInline #otherVideo autoPlay></video>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </article>
+  <article class="options">
+    <mat-list role="list">
+      <mat-list-item role="listitem" *ngFor="let item of users">{{item.id}} - {{item.name}}
+        <button *ngIf="item.name === otherUser.name && !isCalling" mat-raised-button color="primary" (click)="callUser(item)">Llamar</button>
+        <button *ngIf="isCalling && item.name === otherUser.name" mat-raised-button color="accent" (click)="acceptCall()">Aceptar</button>
+        <button *ngIf="isCalling && showCancelButton && item.name === otherUser.name" mat-raised-button color="warn" (click)="rejectCall()">Cancelar</button>
+      </mat-list-item>
+    </mat-list>
+  </article>
+</section>
